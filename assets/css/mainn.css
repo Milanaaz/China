@@ -1,0 +1,28 @@
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическая настройка колонок */
+    gap: 10px; /* Расстояние между изображениями */
+    justify-items: center; /* Центрирует изображения в колонках */
+    align-items: center;
+  }
+  
+  .feature-img img {
+    width: 100%; /* Заставляет изображение занимать всю ширину своей ячейки */
+    max-width: 200px; /* Максимальная ширина изображения */
+    height: auto; /* Сохраняет пропорции */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-img img:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+
+.profile-in-navbar a{
+    font-weight: bold;  
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px; 
+}
